@@ -54,9 +54,7 @@ module Mel
     def choose_destination
       if (some_choices = choices)
         blank_space
-        spacer
         display
-        spacer
         blank_space
         ask_prompt(some_choices)
       else
@@ -65,6 +63,7 @@ module Mel
     end
 
     def decobox(*lines)
+      lines = lines[0].split("\n") if lines.length == 1
       max_length = lines.map(&:length).max
       puts "+-#{"-" * max_length}-+"
       lines.each do |line|
@@ -73,6 +72,5 @@ module Mel
       end
       puts "+-#{"-" * max_length}-+"
     end
-
   end
 end

@@ -5,19 +5,19 @@ require_relative "lib/mel/scene-fsm/version"
 Gem::Specification.new do |spec|
   spec.name = "mel-scene-fsm"
   spec.version = Mel::SCENE_FSM_VERSION
-  spec.authors = ["someuser"]
-  spec.email = ["someuser@example.org"]
+  spec.authors = ["Meleneth"]
+  spec.email = ["meleneth@gmail.com"]
 
-  spec.summary = "a summary for those that require it - like RubyGems"
-  spec.description = "some succinct description"
-  spec.homepage = "http://localhost.localhost/index.html"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.summary = "FSM base configured to run multiple choice based text UI's"
+  spec.description = "Uses TTY::Prompt and state_machines, extracted implementation"
+  spec.homepage = "https://github.com/meleneth/mel-scene-fsm"
+  spec.required_ruby_version = ">= 3.0.0"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  #  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "http://localhost.localdomain/project_url"
-  spec.metadata["changelog_uri"] = "http://localhost.localdomain/project_url/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/meleneth/mel-scene-fsm"
+  spec.metadata["changelog_uri"] = "https://github.com/meleneth/mel-scene-fsm/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
